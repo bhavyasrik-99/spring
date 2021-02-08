@@ -32,8 +32,8 @@ d.put(b.getId(), b);
 public ResponseEntity<Object> addUser(@Valid @RequestBody Source data,
 BindingResult result) {
 if (result.hasErrors()) throw new Ev();
-else
-d.put(data.getId(), data);
+else {
+d.put(data.getId(), data);}
 return ResponseEntity.ok("Uploaded");
 }
 @GetMapping("getdetails")

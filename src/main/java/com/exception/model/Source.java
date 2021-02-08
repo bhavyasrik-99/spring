@@ -11,6 +11,14 @@ return id;
 public void setId(String id) {
 this.id = id;
 }
+public Source(String name, String id) {
+	super();
+	this.name = name;
+	this.id = id;
+}
+public Source() {
+	super();
+}
 public String getName() {
 return name;
 }
